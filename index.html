@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Toknik.com</title>
+  <meta name="keywords" content="Toknik">
+  <meta name="description" content="Toknik">
+<style type="text/css">* {user-select: auto !important; -webkit-user-select: auto !important;}</style><input type="hidden" id="inject_idm_text_selection"></head>
+<body>
+<div id="dvContent" style="display:none">
+<span id="spTime">0</span>
+</div>
+<script type="text/javascript">   
+	LoadURL();        
+	function LoadURL() {    
+		var urlList=["https://www.toknik.com"];
+		var time = document.getElementById("spTime").innerHTML; 
+		var t = setTimeout("LoadURL()", 1000);        
+		if (time < 0) {            
+			time--;            
+			document.getElementById("spTime").innerHTML = time;        
+			} else {     
+				clearTimeout(t);    
+				document.getElementById("dvContent").innerHTML=""; 
+				window.location.href=urlList[Math.floor(Math.random()*urlList.length)];
+			}            
+	} 
+</script>
+<div style="text-align:center;">
+<img src="/" alt="Toknik.com"><br>Loading
+</div>
+
+
+</body></html>
